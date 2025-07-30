@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Loggin</h1>
+
+    <form action="">
+        <!-- Nombre de usuario -->
+
+        <div>
+            <label for="username">Ingrese su nombre de usuario:</label>
+            <input type="text"id="username" required>
+        </div>
+
+        <!-- Contraseña -->
+
+        <div>
+            <label for="password">Inrgese su contraseña:/label>
+            <input type="password"id="password" required minlength="8 maxlength="12">
+        </div>
+
+        <div>
+            <label for="region">Seleccione una región</label>
+            <select id="region" required>
+                <option value="north">Norte</option>
+                <option value="south" disabled>Sur</option>
+                <option value="east">Este</option>
+                <option value="west" selected>Oeste</option>
+        </div>
+
+        <div>
+            <label for="welcome-message">Escribe un mensaje de bienvenida</label>
+            <textarea id="welcome-message" rows="10" cols="5"></textarea>
+        </div>
+
+        <!-- Botón de envío -->
+
+        <button type="submit"></button>
+    </form>
+</body>
+</html>
