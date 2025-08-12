@@ -1,0 +1,68 @@
+:root{
+    --oscuro: #1f1346;
+    --violeta: #673de6;
+    --complementario: #2f1c6a;
+    --blanco: #f5f5f5;
+}
+
+@font-face {
+    font-family: 'DM-Sans';
+    src: url(/clase-7/font/DMSANS-VARIABLEFONT_OPSZ\,WGHT.TTF) format('truetype');
+}
+
+*{
+    font-family: 'DM-Sans';
+}
+
+.caja{
+    width: 1200px;
+    height: 500px;
+    padding: 30px;
+    background-color: var(--oscuro);
+    color: var(--blanco);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+p{
+    text-align: center;
+    line-height: 20px;
+}
+
+section{
+    width: 300px;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: var(--complementario);
+}
+
+button{
+    padding: 13px 45px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--violeta);
+    color: var(--blanco);
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+i{
+    width: 10px;
+    height: 10px;
+    padding: 7px;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: var(--violeta);
+}
