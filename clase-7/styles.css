@@ -3,6 +3,10 @@
     --violeta: #673de6;
     --complementario: #2f1c6a;
     --hover: #5025d1;
+    --hover-2: #e2dbfc;
+    --background-price: #d5dfff;
+    --background-card: #fafbff;
+    --border-card: #d5dfff;
     --btn-border-hover: #d8dae0;
     --btn-text-hover: #6d7081;
     --blanco: #f5f5f5;
@@ -29,6 +33,7 @@ nav{
     justify-content: space-between;
     height: 60px;
     padding: 1% 0%;
+    background-color: var(--blanco);
 }
 
 .cuenta{
@@ -74,9 +79,77 @@ ul a:hover{
     color: var(--btn-text-hover);
 }
 
-.caja{
-    width: 208vh;
-    height: 500px;
+.caja-1{
+    width: 100%;
+    height: 87vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+.prices{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    gap: 12px;
+}
+
+.caja-1 .prices .price-container{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2%;
+    border: 1px solid var(--border-card);
+    border-radius: 15px;
+    background-color: var(--background-card);
+    gap: 36px;
+}
+
+.caja-1 .prices .price-container .title-description__offer{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    width: 110%;
+}
+
+.offer{
+    text-align: end;
+}
+
+.plan-button button{
+    background: transparent;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 8px;
+    padding: 11px 47px;
+    border: 1px solid var(--violeta);
+    color: var(--violeta);
+}
+
+.plan-button .selected{
+    background-color: var(--violeta);
+    color: var(--blanco);
+}
+
+.plan-button .selected:hover{
+    background-color: var(--hover);
+    color: var(--blanco);
+    cursor: pointer;
+}
+
+.plan-button button:hover{
+    background-color: var(--hover-2);
+    cursor: pointer;
+}
+
+.caja-2{
+    width: 205.7vh;
+    height: 87vh;
     padding: 30px;
     background-color: var(--oscuro);
     color: var(--blanco);
@@ -92,7 +165,7 @@ ul a:hover{
     flex-direction: row;
     justify-content: space-evenly;
     width: 80%;
-    gap: 0 2px;
+    gap: 0 10px;
 }
 
 .card-container .card{
@@ -101,7 +174,7 @@ ul a:hover{
     align-items: flex-start;
     width: 300px;
     height: 210px;
-    padding: 0 2%;
+    padding: 1% 3%;
     padding-top: 2%;
     gap: 20px 0;
     border-radius: 15px;
@@ -131,7 +204,7 @@ ul a:hover{
     font-weight: 800;
     border-radius: 20px;
     border: none;
-    padding: .8% 1%;
+    padding: 8px;
     background-color: var(--violeta);
     color: var(--blanco);
 }
@@ -151,6 +224,7 @@ ul a:hover{
 /* texto */
 
 h1{
+    letter-spacing: 1px;
     font-size: 36px;
 }
 
@@ -174,8 +248,46 @@ ul a{
 .parrafo{
     text-align: center;
     line-height: 20px;
-    width: 75%;
+    width: 76%;
     line-height: 24px;
+}
+
+.offer span{
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 2% 4%;
+    background-color: var(--background-price);
+}
+
+.title-description__offer h1{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.title-description__offer .description{
+    font-size: 14px;
+}
+
+.plan-price{
+    word-spacing: -6px ;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.plan-price .chiquito{
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.container-plan-price b{
+    font-size: 18px;
+    color: var(--violeta);
+    font-weight: bold;
+}
+
+.container-plan-price .oculto{
+    color: var(--background-card);
 }
 
 i{
