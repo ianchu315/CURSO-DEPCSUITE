@@ -332,6 +332,10 @@ hr {
 	width: 20%;
 }
 
+.social-footer .logo {
+	display: none;
+}
+
 .politics {
 	display: flex;
 	flex-direction: row;
@@ -593,13 +597,21 @@ i {
 
 	.social-media {
 		width: 90%;
-		gap: 22%;
+		gap: 16%;
 		padding: 2%;
 		justify-content: center;
 	}
 
 	.social-media i {
 		background: transparent;
+	}
+
+	.footer-container .gral-footer .logo {
+		display: none;
+	}
+
+	.social-footer .logo {
+		display: flex;
 	}
 
 	.politics {
