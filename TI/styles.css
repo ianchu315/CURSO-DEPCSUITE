@@ -58,6 +58,7 @@ ul a:hover {
 	align-items: center;
 	list-style: none;
 	gap: 3px;
+	margin-bottom: 1%;
 }
 
 .header ul li i {
@@ -416,6 +417,10 @@ hr {
 
 /* texto */
 
+button {
+	cursor: pointer;
+}
+
 h1 {
 	letter-spacing: 1px;
 	font-size: 36px;
@@ -577,6 +582,10 @@ i {
 	}
 
 	.hero-container .hero-text {
+		width: 100%;
+	}
+
+	.hero-container .hero-text button {
 		width: 100%;
 	}
 
